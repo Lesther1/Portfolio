@@ -39,7 +39,7 @@
 /* active link */
 .active-link,
 .nav__link:hover{
-    color: var(--title-color-dark);
+    color: rgba(0, 0, 255, 0.7);
 }
 
 /* BREAKPOINTS */

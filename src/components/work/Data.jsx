@@ -9,31 +9,34 @@ export const projectsData = [
         id: 1,
         image: Work1,
         title: "Web design",
-        category: "web",
+        category: "frontend",
       },
       {
         id: 2,
         image: Work2,
-        title: "App movil",
-        category: "app",
+        title: "Web tributo",
+        category: "frontend",
+        link:"https://web-tributo-alpha.vercel.app/"
       },
       {
         id: 3,
         image: Work3,
         title: "Brand design",
-        category: "desing",
+        category: "backend",
       },
       {
         id: 4,
         image: Work4,
-        title: "App movil",
-        category: "app",
+        title: "CRUD API PAGOS",
+        category: "backend",
+        link: 'https://lesther1.github.io/documentation/'
       },
       {
         id: 5,
         image: Work5,
-        title: "Web design",
-        category: "web",
+        title: "NTF PAG",
+        category: "frontend",
+        link: 'https://web2-nft.vercel.app/'
       },
  ];
 
@@ -42,12 +45,9 @@ export const projectsData = [
         name : 'all',
     },
     {
-        name : 'web',
+        name : 'frontend',
     },
     {
-        name : 'app',
-    },
-    {
-        name : 'desing',
+        name : 'backend',
     },
  ]
