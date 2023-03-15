@@ -1,7 +1,16 @@
-import React from "react";
+import React , {useRef} from "react";
+import emailjs from '@emailjs/browser';
 import './contact.css'
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_oxnpjjg', 'template_sc2qwht', form.current, 'f9_Ky5GtUYtw15h-Y')
+    e.target.reset();
+  }
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -14,7 +23,7 @@ function Contact() {
               <i className="bx bx-mail-send contact__card-icon"></i>
 
               <h3 className="contact__title">Email</h3>
-              <span className="contact__card-data">user@gmai.com</span>
+              <span className="contact__card-data">lesthercrespo@gmail.com</span>
 
               <a href="" className="contact__button">
                 Write me{" "}
@@ -26,9 +35,9 @@ function Contact() {
               <i className="bx bxl-telegram contact__card-icon"></i>
 
               <h3 className="contact__title">Telegram</h3>
-              <span className="contact__card-data">9999999</span>
+              <span className="contact__card-data">@Lesther_Rey</span>
 
-              <a href="" className="contact__button">
+              <a href="https://t.me/Lesther_Rey" target='_blank' className="contact__button">
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -37,7 +46,7 @@ function Contact() {
         </div>
         <div className="contact__content">
           <h3 className="contact__title">Write me</h3>
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
@@ -77,4 +86,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact

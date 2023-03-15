@@ -8,7 +8,7 @@ function Data() {
         </h1>
         <h3 className="home__subtitle">Jr fullstack developer</h3>
         <p className="home__description">Front end/ back end developer</p>
-        <a href="" className="button button--flex">
+        <a href="#contact" className="button button--flex">
             Say hello
             <i className="uil uil-comment-dots"></i>
         </a>

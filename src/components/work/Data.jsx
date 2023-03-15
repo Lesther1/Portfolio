@@ -21,8 +21,9 @@ export const projectsData = [
       {
         id: 3,
         image: Work3,
-        title: "Brand design",
-        category: "backend",
+        title: "Calculator",
+        category: "frontend",
+        link: 'https://lesther1.github.io/calculator/'
       },
       {
         id: 4,
@@ -34,7 +35,7 @@ export const projectsData = [
       {
         id: 5,
         image: Work5,
-        title: "NTF PAG",
+        title: "NTF WEB",
         category: "frontend",
         link: 'https://web2-nft.vercel.app/'
       },
